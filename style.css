@@ -476,7 +476,8 @@ footer a:hover {
 
     .copy{
         background-color: var(--light);
-
+        font-style:italic;
+        font-weight: 100;
 
     }
 
