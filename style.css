@@ -358,7 +358,6 @@ footer a:hover {
 @media screen and (max-width: 1020px) {
     /*classes gerais*/
 
-
     .inc {
         display: flex;
         flex-direction: column;
@@ -394,7 +393,7 @@ footer a:hover {
     }
 
     .hero-stats li {
-        margin-left: 10px
+        margin-left: 10px;
     }
 
 
@@ -421,12 +420,16 @@ footer a:hover {
 
     }
 
- /* Dentro do seu @media screen and (max-width: 1028px) */
-    .menu-services{
+    .menu-services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        margin: 0 auto;
+    }
 
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo */
-    width: 70%;          /* Diminui a largura total (ajuste o % como preferir) */
-    margin: 0 auto;     /* Garante que o card fique no centro da tela */
+    footer{
+        display: none;
+
+    }
 }
