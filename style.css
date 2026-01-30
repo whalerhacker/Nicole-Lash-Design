@@ -428,8 +428,50 @@ footer a:hover {
         margin: 0 auto;
     }
 
-    footer{
+    footer {
         display: none;
 
     }
+
+    section .salao {
+        display: none;
+    }
+
+    .sobre {
+        display: flex;
+        flex-direction: column;
+        /* Empilha o título e o parágrafo */
+        align-items: center;
+        /* Centraliza os blocos horizontalmente */
+        margin-top: -55px;
+        /* Centraliza as linhas de texto */
+        width: 100%;
+        /* Garante que use todo o espaço da tela */
+        padding: 20px;
+        /* Dá um respiro para o texto não encostar nas bordas */
+    }
+
+    .sobre h2{
+
+        text-align: center;
+    }
+
+    /* Ajuste o parágrafo especificamente para ele não ficar muito estreito */
+    .sobre p {
+        text-align: center;
+        margin-top: -100px;
+        width: 90%;
+        /* Aumenta a área do texto */
+        max-width: 500px;
+        /* Evita que fique largo demais em telas maiores */
+        margin: 0 auto;
+        /* Centraliza o bloco do parágrafo */
+    }
+
+    .sobre .listagem {
+        margin: 0 0 60px 60px;
+        text-align: left;
+
+    }
+
 }
