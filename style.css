@@ -474,4 +474,10 @@ footer a:hover {
 
     }
 
+    .copy{
+        background-color: var(--light);
+
+
+    }
+
 }
