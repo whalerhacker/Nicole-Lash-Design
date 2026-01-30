@@ -39,9 +39,34 @@ html {
     scroll-behavior: smooth;
 }
 
-.btn {
+.btn-agenda {
+
     background-color: #000000dc;
     display: inline-block;
+    padding: 12px 24px;
+    color: var(--primary);
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.03s;
+    cursor: pointer;
+    border: 2px solid var(--primary);
+
+}
+
+
+.btn-agenda:hover {
+    filter: brightness(1.2);
+    transform: translateY(-3px);
+    border: 2px solid #333;
+    background-color: var(--primary);
+    color: #000000dc;
+
+
+}
+
+.btn {
+    background-color: #000000dc;
+    display: flex;
     padding: 12px 24px;
     color: var(--primary);
     border-radius: 8px;
@@ -86,7 +111,6 @@ header {
 .logo {
     position: relative;
     display: inline-block;
-
 }
 
 .logo .icon {
@@ -233,7 +257,6 @@ section {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 5px 40px var(--primary);
-
     display: flex;
     flex-direction: column;
 }
@@ -263,7 +286,7 @@ section {
 
 .menu-img {
     width: 100%;
-    height: 250px;
+    height: auto;
     position: relative;
 }
 
@@ -330,4 +353,80 @@ footer a:hover {
     font-size: 14px;
     font-weight: bold;
     background-color: var(--dark);
+}
+
+@media screen and (max-width: 1020px) {
+    /*classes gerais*/
+
+
+    .inc {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-inicio .inc {
+        flex-direction: column-reverse;
+    }
+
+    /*cabeçalho*/
+    .menu-desktop,
+    .btn-agenda {
+        display: none;
+    }
+
+    .inc h1 {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .inc p {
+        text-align: center;
+        justify-content: auto;
+        margin-top: 20px;
+    }
+
+
+    .hero-stats {
+        text-align: center;
+        margin-left: 20px;
+
+    }
+
+    .hero-stats li {
+        margin-left: 10px
+    }
+
+
+    .hero-buttons {
+        display: none;
+    }
+
+
+    .serviços h2 {
+        margin-bottom: 40px;
+
+
+    }
+
+    .inc img {
+        width: auto;
+        height: 250px;
+
+
+    }
+
+    .main-inicio ul {
+        margin-bottom: -80px;
+
+    }
+
+ /* Dentro do seu @media screen and (max-width: 1028px) */
+    .menu-services{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo */
+    width: 70%;          /* Diminui a largura total (ajuste o % como preferir) */
+    margin: 0 auto;     /* Garante que o card fique no centro da tela */
 }
