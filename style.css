@@ -6,7 +6,7 @@
 
 :root {
     --primary: #ff74ff;
-    --secundary: rgb(255, 162, 240);
+    --secundary: rgba(255, 162, 239, 0.751);
     --dark: #000000dc;
     --light: #FFFFFF;
     --gray: rgba(128, 128, 128, 0.507) --shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
@@ -96,7 +96,7 @@ html {
 
 header {
     position: fixed;
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(10px);
     inset: 0 0 auto 0;
     display: flex;
     align-items: center;
@@ -339,7 +339,7 @@ section {
     margin-left: 20px;
 }
 
-.p2{
+section .agd{
     display: none;
 }
 
@@ -504,17 +504,19 @@ footer a:hover {
         height: 60px;
         width: auto;
         margin-right: -30px;
-        margin-top: -3px;
+        margin-top: 5px;
     }
 
     span {
         margin-left: 55px;
         font-size: 17px;
-        font-weight: 340;
+        font-weight: 350;
+        margin-top: 25px;
     }
 
     header {
         padding: 1px 8px;
+        backdrop-filter: blur(10px);
     }
 
     .btn-rodape {
@@ -528,7 +530,7 @@ footer a:hover {
         transition: 0.03s;
         cursor: pointer;
         border: 2px solid var(--primary);
-        margin: -20px 0 -50px 0;
+        margin: 10px 0 -50px 0;
     }
 
     .btn-rodape:hover {
@@ -538,11 +540,13 @@ footer a:hover {
         border: 2px solid #333;
         background-color: var(--primary);
         color: #000000dc;
-
     }
 
-    
-
-
+    section .agd{
+        display: block;
+        font-weight: 200;
+        font-size: 18px;
+        margin: -80px 0 -60px 0;
+    }
 
 }
