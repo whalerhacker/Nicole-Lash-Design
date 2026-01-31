@@ -525,6 +525,7 @@ footer a:hover {
         background-color: #000000dc;
         display: flex;
         justify-content: center;
+        text-align: center;
         padding: 12px 24px;
         color: var(--primary);
         border-radius: 8px;
@@ -535,6 +536,7 @@ footer a:hover {
         border: 2px solid var(--primary);
         margin: -35px auto 60px auto;
         width: 240px;
+        flex-direction: row;
     }
 
     .btn-rodape:hover {
