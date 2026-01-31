@@ -21,10 +21,20 @@ body {
 
 }
 
-
 a {
     text-decoration: none;
     color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo-menu {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 img {
@@ -49,9 +59,7 @@ html {
     transition: 0.03s;
     cursor: pointer;
     border: 2px solid var(--primary);
-
 }
-
 
 .btn-agenda:hover {
     filter: brightness(1.2);
@@ -59,8 +67,6 @@ html {
     border: 2px solid #333;
     background-color: var(--primary);
     color: #000000dc;
-
-
 }
 
 .btn {
@@ -82,7 +88,6 @@ html {
     border: 2px solid #333;
     background-color: var(--primary);
     color: #000000dc;
-
 }
 
 .btn-outline {
@@ -131,18 +136,29 @@ span {
     margin-top: 10px;
 }
 
-
-header .menu-desktop {
+header .nav-list {
     display: flex;
     gap: 30px;
 }
 
-header .menu-desktop a {
+header .nav-list a {
     font-weight: 600;
 }
 
-header .menu-desktop a:hover {
-    color: var(--primary);
+header .nav-list a:hover {
+    color: var(--secundary);
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+
+.mobile-menu {
+    cursor: pointer;
+    display: none;
 }
 
 section {
@@ -244,14 +260,13 @@ section {
     border-radius: var(--ratius);
 }
 
-
-.menu-desktop {
+.nav-list {
     width: 100%;
     height: auto;
     justify-content: center;
     display: flex;
-    margin-left: 300px;
-    margin-top: -45px;
+    margin-left: 250px;
+    margin-top: -35px;
 }
 
 .menu-services {
@@ -268,7 +283,6 @@ section {
     display: flex;
     flex-direction: column;
 }
-
 
 .menu-service h3 {
     padding: 15px;
@@ -340,15 +354,14 @@ section {
     margin-left: 20px;
 }
 
-.agd{
+.agd {
     display: none;
 }
 
-.btn-rodape{
+.btn-rodape {
     display: none;
 
 }
-
 
 footer {
     display: grid;
@@ -357,11 +370,6 @@ footer {
     padding: 30px 5% 20px;
     background: var(--dark);
     color: #fff8f8;
-}
-
-footer a:hover {
-    color: var(--primary);
-
 }
 
 .copy {
@@ -373,9 +381,11 @@ footer a:hover {
     background-color: var(--dark);
 }
 
-
 @media screen and (max-width: 1020px) {
-    /*classes gerais*/
+
+    body .nav-list {
+        display: none;
+    }
 
     .inc {
         display: flex;
@@ -386,7 +396,6 @@ footer a:hover {
         flex-direction: column-reverse;
     }
 
-    /*cabeçalho*/
     nav .btn-agenda {
         display: none;
     }
@@ -403,7 +412,6 @@ footer a:hover {
         margin-top: 20px;
     }
 
-
     .hero-stats {
         text-align: center;
         margin-left: 20px;
@@ -414,11 +422,9 @@ footer a:hover {
         margin-left: 10px;
     }
 
-
     .hero-buttons {
         display: none;
     }
-
 
     .serviços h2 {
         margin-bottom: 40px;
@@ -446,11 +452,6 @@ footer a:hover {
         margin: 0 auto;
     }
 
-    footer {
-        display: none;
-
-    }
-
     section .salao {
         display: none;
     }
@@ -458,13 +459,9 @@ footer a:hover {
     .sobre {
         display: flex;
         flex-direction: column;
-        /* Empilha o título e o parágrafo */
         align-items: center;
-        /* Centraliza os blocos horizontalmente */
         margin-top: -55px;
-        /* Centraliza as linhas de texto */
         width: 100%;
-        /* Garante que use todo o espaço da tela */
         padding: 20px;
         background-color: var(--light);
     }
@@ -474,28 +471,22 @@ footer a:hover {
         text-align: center;
     }
 
-    /* Ajuste o parágrafo especificamente para ele não ficar muito estreito */
     .sobre p {
         text-align: center;
         margin-top: -100px;
         width: 90%;
-        /* Aumenta a área do texto */
         max-width: 500px;
-        /* Evita que fique largo demais em telas maiores */
         margin: 0 auto;
-        /* Centraliza o bloco do parágrafo */
     }
 
     .sobre .listagem {
         margin: 0 0 60px 60px;
         text-align: left;
-
     }
 
     .copy {
         background-color: var(--light);
         font-weight: 100;
-
     }
 
     .logo .icon {
@@ -520,7 +511,41 @@ footer a:hover {
         padding: 1px 8px;
         backdrop-filter: blur(10px);
     }
-
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+        padding: 40px 5%;
+    }
+    footer div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .sobre-std {
+        display: none;
+    }
+    footer .horario {
+        display: none;
+    }
+    .instagram-ig h4{
+        margin-left: 10px;
+    }
+    .instagram-ig .ig{
+        margin-left: 10px;
+    }
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
     .btn-rodape {
         background-color: #000000dc;
         display: flex;
@@ -538,7 +563,6 @@ footer a:hover {
         width: 240px;
         flex-direction: row;
     }
-
     .btn-rodape:hover {
 
         filter: brightness(1.2);
@@ -547,14 +571,13 @@ footer a:hover {
         background-color: var(--primary);
         color: #000000dc;
     }
-    .btn-agd{
-
-     display: flex;
-    
+    .btn-agd {
+        display: flex;
     }
-
-
-    .agd{
+    .btn-agenda {
+        display: none;
+    }
+    .agd {
         display: block;
         font-weight: 200;
         font-size: 18px;
@@ -562,14 +585,11 @@ footer a:hover {
         background-color: var(--secundary);
         border-radius: 8px;
     }
-
-    .agd div{
+    .agd div {
         text-align: center;
         margin: 20px 0 20px 0;
         padding: 20px;
-        
+
 
     }
-
-
 }
