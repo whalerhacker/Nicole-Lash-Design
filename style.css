@@ -6,7 +6,7 @@
 
 :root {
     --primary: #ff74ff;
-    --secundary: rgb(253, 173, 240);
+    --secundary: rgb(255, 162, 240);
     --dark: #000000dc;
     --light: #FFFFFF;
     --gray: rgba(128, 128, 128, 0.507) --shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
@@ -40,7 +40,6 @@ html {
 }
 
 .btn-agenda {
-
     background-color: #000000dc;
     display: inline-block;
     padding: 12px 24px;
@@ -103,19 +102,21 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 15px 5%;
-    background: rgba(253, 173, 240, 0.952);
+    background: var(--secundary);
     box-shadow: var(--shadow);
     z-index: 99;
 }
 
 .logo {
-    position: relative;
-    display: inline-block;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .logo .icon {
     position: absolute;
-    left: -25px;
+    left: 40px;
     top: 50%;
     transform: translateY(-50%);
     height: 100px;
@@ -124,26 +125,23 @@ header {
 }
 
 span {
-    margin-left: 65px;
+    margin-left: 60px;
     font-size: 25px;
     font-weight: 340;
-
-
+    margin-top: 10px;
 }
 
 
-
-
-header nav {
+header .menu-desktop {
     display: flex;
     gap: 30px;
 }
 
-header nav a {
+header .menu-desktop a {
     font-weight: 600;
 }
 
-header nav a:hover {
+header .menu-desktop a:hover {
     color: var(--primary);
 }
 
@@ -244,6 +242,16 @@ section {
     width: 100%;
     max-width: 500px;
     border-radius: var(--ratius);
+}
+
+
+.menu-desktop {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    margin-left: 300px;
+    margin-top: -45px;
 }
 
 .menu-services {
@@ -368,8 +376,7 @@ footer a:hover {
     }
 
     /*cabeçalho*/
-    .menu-desktop,
-    .btn-agenda {
+    nav .btn-agenda {
         display: none;
     }
 
@@ -451,7 +458,7 @@ footer a:hover {
         /* Dá um respiro para o texto não encostar nas bordas */
     }
 
-    .sobre h2{
+    .sobre h2 {
 
         text-align: center;
     }
@@ -474,9 +481,58 @@ footer a:hover {
 
     }
 
-    .copy{
+    .copy {
         background-color: var(--light);
         font-weight: 100;
     }
+
+    .logo .icon {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 60px;
+        width: auto;
+        margin-right: -30px;
+        margin-top: -3px;
+    }
+
+    span {
+        margin-left: 55px;
+        font-size: 17px;
+        font-weight: 340;
+    }
+
+    header {
+        padding: 1px 8px;
+    }
+
+    .btn-rodape {
+        background-color: #000000dc;
+        display: flex;
+        justify-content: center;
+        padding: 12px 24px;
+        color: var(--primary);
+        border-radius: 8px;
+        font-weight: 600;
+        transition: 0.03s;
+        cursor: pointer;
+        border: 2px solid var(--primary);
+        margin: -20px 0 -50px 0;
+    }
+
+    .btn-rodape:hover {
+
+        filter: brightness(1.2);
+        transform: translateY(-3px);
+        border: 2px solid #333;
+        background-color: var(--primary);
+        color: #000000dc;
+
+    }
+
+    
+
+
 
 }
