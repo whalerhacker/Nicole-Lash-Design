@@ -523,16 +523,17 @@ footer a:hover {
 
     .btn-rodape {
         background-color: #000000dc;
-        display: flex;
         justify-content: center;
         padding: 12px 24px;
         color: var(--primary);
         border-radius: 8px;
         font-weight: 600;
+        font-size: 15px;
         transition: 0.03s;
         cursor: pointer;
         border: 2px solid var(--primary);
-        margin: -35px 0 60px 0;
+        margin: -35px auto 60px auto;
+        width: 220px;
     }
 
     .btn-rodape:hover {
@@ -543,6 +544,10 @@ footer a:hover {
         background-color: var(--primary);
         color: #000000dc;
     }
+    .btn-agd{
+        display: flex;
+    }
+
 
     .agd{
         display: block;
@@ -550,6 +555,7 @@ footer a:hover {
         font-size: 18px;
         margin: -80px 0 -60px 0;
         background-color: var(--secundary);
+        border-radius: 8px;
     }
 
     .agd div{
