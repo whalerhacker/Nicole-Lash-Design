@@ -493,7 +493,7 @@ footer a:hover {
     }
 
     .copy {
-        background-color: var(--secundary);
+        background-color: var(--light);
         font-weight: 100;
 
     }
