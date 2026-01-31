@@ -339,6 +339,15 @@ section {
     margin-left: 20px;
 }
 
+.p2{
+    display: none;
+}
+
+.btn-rodape{
+    display: none;
+
+}
+
 
 footer {
     display: grid;
@@ -362,6 +371,7 @@ footer a:hover {
     font-weight: bold;
     background-color: var(--dark);
 }
+
 
 @media screen and (max-width: 1020px) {
     /*classes gerais*/
