@@ -533,7 +533,7 @@ footer a:hover {
         cursor: pointer;
         border: 2px solid var(--primary);
         margin: -35px auto 60px auto;
-        width: 220px;
+        width: 240px;
     }
 
     .btn-rodape:hover {
