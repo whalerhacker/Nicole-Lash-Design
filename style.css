@@ -130,6 +130,7 @@ header .nav-list a:hover {
 .btn-abrir-menu i {
     color: #000;
     font-size: 30px;
+    position: static;
 }
 
 .btn-abrir-menu{
@@ -137,7 +138,8 @@ header .nav-list a:hover {
 }
 
 .menu-mobile {
-    background-color: rgba(248, 175, 242, 0.911);
+    background-color: rgba(248, 175, 242, 0.973);
+    backdrop-filter: blur(20px);
     min-height: 100vh;
     position: fixed;
     top: 0;
