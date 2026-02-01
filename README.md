@@ -35,5 +35,5 @@ Botões de CTA com link dinâmico para WhatsApp API.
 
 Header fixo com navegação suave (smooth scroll).
 
-
+Menu de navegção responsivo Pc/Mobile
 
