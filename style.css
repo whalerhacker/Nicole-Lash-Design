@@ -165,8 +165,9 @@ header .nav-list a:hover {
     text-align: right;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
+    margin-right: 20px;
 }
 
 .menu-mobile nav ul li {
