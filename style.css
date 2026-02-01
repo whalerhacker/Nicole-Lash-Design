@@ -661,11 +661,16 @@ footer {
 
     .agd {
         display: block;
-        font-weight: 200;
+        font-weight: 400;
         font-size: 18px;
         margin: -80px 0 -60px 0;
         background-color: var(--secundary);
         border-radius: 8px;
+    }
+
+    .agd p{
+        font-size: 15px;
+        margin: 4px 0 10px 0;
     }
 
     .agd div {
