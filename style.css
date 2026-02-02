@@ -5,7 +5,7 @@
 }
 
 :root {
-    --primary: rgba(255, 162, 239);
+    --primary: rgb(255, 194, 246);
     --secundary: rgba(255, 162, 239, 0.751);
     --dark: #000000dc;
     --light: #FFFFFF;
@@ -53,6 +53,7 @@ html {
     transition: 0.03s;
     cursor: pointer;
     border: 2px solid var(--primary);
+    transition: 0.3s ease;
 }
 
 .btn-agenda:hover {
@@ -73,6 +74,7 @@ html {
     transition: 0.03s;
     cursor: pointer;
     border: 2px solid var(--primary);
+    transition: 0.3s ease
 }
 
 .btn:hover {
@@ -86,6 +88,7 @@ html {
 
 .btn-outline {
     color: var(--primary);
+    transition: 0.3s ease
 }
 
 .btn-outline:hover {
@@ -118,7 +121,6 @@ header .nav-list a {
     font-weight: 500;
 }
 
-
 /* ESTILO DO MEU MOBILE */
 .btn-abrir-menu i {
     color: #000;
@@ -131,8 +133,9 @@ header .nav-list a {
 }
 
 .menu-mobile {
-    background-color: rgba(248, 175, 242, 0.973);
-    backdrop-filter: blur(20px);
+    background-color: var(--primary);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     min-height: 100vh;
     position: fixed;
     top: 0;
@@ -162,6 +165,7 @@ header .nav-list a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-decoration: dotted;
 }
 
 .menu-mobile nav ul li {
@@ -171,8 +175,6 @@ header .nav-list a {
 
 .menu-mobile nav ul li a {
     position: relative;
-    color: #000;
-    text-decoration: underline;
     font-size: 20px;
     font-weight: 300px;
     padding: 20px 4%;
@@ -571,9 +573,9 @@ footer {
         backdrop-filter: blur(10px);
         animation: slideDown 1s ease forwards;
         background-color: var(--primary);
-        transition: 
-        background-color 0.5s ease,
-        border-radius 0.5s ease-in-out; 
+        transition:
+            background-color 0.8s ease,
+            border-radius 0.5s ease;
     }
 
     header.scrolled {
@@ -658,7 +660,6 @@ footer {
         border: 2px solid var(--primary);
         margin: -35px auto 60px auto;
         width: 240px;
-        flex-direction: row;
     }
 
     .btn-rodape:hover {
@@ -672,6 +673,7 @@ footer {
 
     .btn-agd {
         display: flex;
+        transition: 0.3s ease
     }
 
     .btn-agenda {
