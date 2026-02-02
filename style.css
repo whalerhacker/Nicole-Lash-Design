@@ -5,7 +5,7 @@
 }
 
 :root {
-    --primary: #ff74ff;
+    --primary: rgba(255, 162, 239);
     --secundary: rgba(255, 162, 239, 0.751);
     --dark: #000000dc;
     --light: #FFFFFF;
@@ -29,12 +29,6 @@ a {
 
 a:hover {
     opacity: 0.7;
-}
-
-.logo-menu {
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
 }
 
 img {
@@ -106,23 +100,22 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 5%;
+    padding: 22px 5%;
     background: var(--secundary);
     box-shadow: var(--shadow);
     z-index: 99;
+    font-size: 18px;
 }
+
 
 header .nav-list {
     display: flex;
-    gap: 30px;
+    gap: 60px;
+    justify-content: center;
 }
 
 header .nav-list a {
-    font-weight: 600;
-}
-
-header .nav-list a:hover {
-    color: var(--secundary);
+    font-weight: 500;
 }
 
 
@@ -133,7 +126,7 @@ header .nav-list a:hover {
     position: static;
 }
 
-.btn-abrir-menu{
+.btn-abrir-menu {
     display: none;
 }
 
@@ -195,17 +188,16 @@ header .nav-list a:hover {
     display: grid;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+
 }
 
 .logo .icon {
     position: absolute;
-    left: 40px;
+    left: 42px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-42%);
     height: 100px;
     width: auto;
-    margin-right: -30px;
 }
 
 span {
@@ -233,8 +225,7 @@ section {
 }
 
 .main-inicio {
-    background: color rgb(240, 234, 230);
-    padding-top: 90px;
+    padding: 50px;
 }
 
 .inc {
@@ -243,8 +234,10 @@ section {
     align-items: center;
     gap: 60px;
     max-width: 1100px;
-    margin: 0 auto;
-    padding: 60px 20px;
+    margin: 50px 50px 55px;
+    padding: 90px;
+
+
 }
 
 .inc h1 {
@@ -267,6 +260,8 @@ section {
     box-shadow: 0 20px 60px var(--primary);
 }
 
+
+
 .flutuar {
     animation: subirBaixo 4s ease-in-out infinite;
 }
@@ -279,7 +274,7 @@ section {
     }
 
     50% {
-        transform: translateY(-30px);
+        transform: translateY(-50px);
     }
 }
 
@@ -306,8 +301,9 @@ section {
 }
 
 .serviços {
-    padding: 80px 5%;
+    padding: 8px 5%;
     text-align: center;
+    margin: 0 0 80px 0;
 }
 
 .serviços h2 {
@@ -392,8 +388,8 @@ section {
     align-items: center;
     gap: 60px;
     padding: 80px 5%;
+    margin-top: 30px;
     background-color: var(--secundary);
-    margin-top: 1px;
 }
 
 .sobre img {
@@ -459,6 +455,8 @@ footer {
         flex-direction: column;
     }
 
+    .main-inicio {}
+
     .main-inicio .inc {
         flex-direction: column-reverse;
     }
@@ -501,13 +499,8 @@ footer {
 
     .inc img {
         width: auto;
-        height: 250px;
+        height: 300px;
 
-
-    }
-
-    .main-inicio ul {
-        margin-bottom: -80px;
 
     }
 
@@ -556,15 +549,14 @@ footer {
         font-weight: 100;
     }
 
+
     .logo .icon {
         position: absolute;
         left: 10px;
-        top: 50%;
+        top: 55%;
         transform: translateY(-50%);
         height: 60px;
         width: auto;
-        margin-right: -30px;
-        margin-top: 5px;
     }
 
     span {
@@ -575,8 +567,32 @@ footer {
     }
 
     header {
-        padding: 1px 8px;
+        padding: 15px 1.5%;
         backdrop-filter: blur(10px);
+        animation: slideDown 1s ease forwards;
+        background-color: var(--primary);
+        transition: 
+        background-color 0.5s ease,
+        border-radius 0.5s ease-in-out; 
+    }
+
+    header.scrolled {
+        padding: 15px 1.5%;
+        background-color: var(--secundary);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 50px;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-100px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     footer {
@@ -624,6 +640,7 @@ footer {
 
     .btn-abrir-menu {
         display: block;
+        margin-right: 8px;
     }
 
     .btn-rodape {
@@ -670,7 +687,7 @@ footer {
         border-radius: 8px;
     }
 
-    .agd p{
+    .agd p {
         font-size: 15px;
         margin: 4px 0 10px 0;
     }
