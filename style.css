@@ -144,6 +144,11 @@ header .nav-list a {
     transition: .4s;
 }
 
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+}
+
 .menu-mobile.abrir-menu {
     width: 60%;
     backdrop-filter: blur(12px);
@@ -159,6 +164,13 @@ header .nav-list a {
     font-size: 30px;
 }
 
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+
 .menu-mobile nav ul {
     text-align: right;
     display: flex;
@@ -171,6 +183,15 @@ header .nav-list a {
 .menu-mobile nav ul li {
     display: block;
     margin: 45px 0;
+}
+
+#menu-mobile nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    padding: 20px 0;
 }
 
 .menu-mobile nav ul li a {
@@ -207,19 +228,6 @@ span {
     font-size: 25px;
     font-weight: 340;
     margin-top: 10px;
-}
-
-
-.mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-}
-
-.mobile-menu {
-    cursor: pointer;
-    display: none;
 }
 
 section {
@@ -324,6 +332,8 @@ section {
     max-width: 500px;
     border-radius: var(--ratius);
 }
+
+
 
 .nav-list {
     width: 100%;
@@ -574,7 +584,7 @@ footer {
         transition:
             background-color 0.8s ease,
             border-radius 0.5s ease,
-            padding 0.5s ease, 
+            padding 0.5s ease,
             margin-top 0.8s ease;
     }
 
@@ -701,5 +711,33 @@ footer {
         padding: 20px;
 
 
+    }
+
+    .btn-agendar-menu {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: var(--dark);
+        color: var(--primary);
+        padding: 8px 1.5%;
+        margin: -60px 0 0 60px;
+        font-weight: bold;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-size: 12px;
+        box-shadow: 0 0px 5px rgba(0, 0, 0, 0.771);
+        transition: all 0.5s ease, border-radius 0.5s ease;
+    }
+
+    .btn-agendar-menu:hover {
+        border: 2px solid #333;
+        border-radius: 50px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.771);
+        background-color: var(--primary);
+        color: #000000dc;
+        padding: 15px 1.5%;
+        filter: brightness(1.2);
+        transform: translateY(-6px)
     }
 }
