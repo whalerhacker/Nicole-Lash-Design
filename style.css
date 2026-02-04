@@ -105,7 +105,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 5%;
+    padding: 22px 5%;
     background: var(--secundary);
     z-index: 99;
     font-size: 18px;
