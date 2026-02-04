@@ -7,16 +7,18 @@
 :root {
     --primary: rgb(255, 194, 246);
     --secundary: rgba(255, 162, 239, 0.596);
+    --terc:rgb(255, 151, 239);
     --dark: #000000dc;
     --light: #FFFFFF;
-    --gray: rgba(128, 128, 128, 0.507) --shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    --gray: rgba(128, 128, 128, 0.507) 
+    --shadow: 0 10px 40px rgba(255, 162, 239, 0.596)
     --radius: 8px;
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
-    background: color rgb(240, 234, 230);
     line-height: 1.6;
+    background-color: #fff;
     color: #333;
 
 }
@@ -103,9 +105,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 22px 5%;
+    padding: 20px 5%;
     background: var(--secundary);
-    box-shadow: var(--shadow);
     z-index: 99;
     font-size: 18px;
 }
@@ -141,7 +142,7 @@ header .nav-list a {
     z-index: 99999;
     width: 0%;
     overflow: hidden;
-    transition: .4s;
+    transition: .4s ease;
 }
 
 .mobile-menu {
@@ -151,8 +152,6 @@ header .nav-list a {
 
 .menu-mobile.abrir-menu {
     width: 60%;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
 }
 
 .menu-mobile .btn-fechar {
@@ -238,6 +237,7 @@ section {
     padding: 50px;
 }
 
+
 .inc {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -248,6 +248,14 @@ section {
     padding: 90px;
 
 
+}
+
+.inc .bem-vindo{
+    -webkit-text-stroke: 0.3px var(--dark);
+    color: #FF53cd;
+    font-size: 48px;
+    font-weight: 700;
+    margin-left: 1px;
 }
 
 .inc h1 {
@@ -267,7 +275,7 @@ section {
     width: 100%;
     max-width: 500px;
     border-radius: 100%;
-    box-shadow: 0 20px 60px var(--primary);
+    box-shadow: 0 20px 60px var(--terc);
 }
 
 
@@ -307,13 +315,14 @@ section {
 
 .hero-stats strong {
     font-size: 28px;
-    color: var(--primary);
+    color: black;
 }
 
 .serviços {
     padding: 8px 5%;
     text-align: center;
     margin: 0 0 80px 0;
+
 }
 
 .serviços h2 {
@@ -473,6 +482,9 @@ footer {
 
     nav .btn-agenda {
         display: none;
+    }
+    .inc .bem-vindo{
+        font-size: 40px;
     }
 
     .inc h1 {
